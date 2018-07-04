@@ -16,7 +16,7 @@ test('Should register an observer by adding it to an internal array', () => {
     observer = { update: (observable) => {
         expect(observable.value).toBe('jeff')
     }}
-    observable.register(observer)
+    observable.subscribe(observer)
     expect(observable.observers).toContain(observer)
 })
 test('Should notify all registered observers when its value updates', () => {    
@@ -24,8 +24,8 @@ test('Should notify all registered observers when its value updates', () => {
         markNotified()
         expect(observable.value).toBe('chris')
     }}
-    observable.register(observer)
-    observable.register(observer)
+    observable.subscribe(observer)
+    observable.subscribe(observer)
     expect(markNotified).not.toHaveBeenCalled()
     observable.value = 'chris'
     expect(markNotified).toHaveBeenCalledTimes(2)
@@ -35,9 +35,9 @@ test('Should remove an observer when the unregister method is called', () => {
         markNotified()
         expect(observable.value).toBe('chris')
     }}
-    const observerIndex = observable.register(observer)
-    observable.register(observer)
-    observable.unregister(observerIndex)
+    const observerIndex = observable.subscribe(observer)
+    observable.subscribe(observer)
+    observable.unsubscribe(observerIndex)
     expect(markNotified).not.toHaveBeenCalled()
     observable.value = 'chris'
     expect(markNotified).toHaveBeenCalledTimes(1)

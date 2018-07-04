@@ -6,11 +6,11 @@ function Observer(observable) {
         return this.value
     }
     this.subscribe = (after) => {
-        observerIndexPosition = observable.register({ update, after })
+        observerIndexPosition = observable.subscribe({ update, after })
         return this
     }
     this.unsubscribe = (finalValue) => {
-        observable.unregister(observerIndexPosition)
+        observable.unsubscribe(observerIndexPosition)
         observable = undefined
         value = finalValue
     }

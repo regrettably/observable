@@ -9,11 +9,11 @@ function Observable(value) {
     })
 }
 
-Observable.prototype.register = function(observer) {
+Observable.prototype.subscribe = function(observer) {
     return (this.observers.push(observer) -1)
 }
 
-Observable.prototype.unregister = function(index) {
+Observable.prototype.unsubscribe = function(index) {
     this.observers.splice(index, 1)
 }
 
