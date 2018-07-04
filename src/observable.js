@@ -10,11 +10,11 @@ function Observable(value) {
 }
 
 Observable.prototype.register = function(observer) {
-    return this.observers.push(observer)
+    return (this.observers.push(observer) -1)
 }
 
 Observable.prototype.unregister = function(index) {
-    this.observers.splice(index)
+    this.observers.splice(index, 1)
 }
 
 Observable.prototype.notifyObservers = function() {
