@@ -1,6 +1,6 @@
 {
   "name": "observable.js",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Observable classes for JS",
   "main": "index.js",
   "directories": {
@@ -8,6 +8,10 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/regrettably/observable"
   },
   "author": "Ben Ford @regrettably",
   "license": "ISC",
