@@ -1,7 +1,7 @@
 {
-  "name": "observable",
+  "name": "observable.js",
   "version": "1.0.0",
-  "description": "Observable pattern in JS",
+  "description": "Observable classes for JS",
   "main": "index.js",
   "directories": {
     "test": "test"
