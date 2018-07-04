@@ -1,5 +1,5 @@
 {
-  "name": "observable.js",
+  "name": "observables.js",
   "version": "0.1.0",
   "description": "Observable classes for JS",
   "main": "index.js",
