@@ -1,0 +1,17 @@
+{
+  "name": "observable",
+  "version": "1.0.0",
+  "description": "Observable pattern in JS",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ben Ford @regrettably",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.2.0"
+  }
+}
