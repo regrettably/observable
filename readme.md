@@ -1,5 +1,5 @@
 # Observables.js
-Observables.js is a super small library of observable helper classes for your project.
+Observables.js is "kinda" an implementation of the observable pattern in JS.
 
 ## How do I use it?
 Look through the [tests](test/) for a good idea. 
